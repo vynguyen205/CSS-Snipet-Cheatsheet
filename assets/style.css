@@ -1,0 +1,50 @@
+body {
+    background-color:#26141F ;
+    color: #C0C4FA;
+    height: 100vh
+    
+}
+
+body > h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+body > p {
+    text-align: center;
+     color:white
+}
+.row {
+    display: inline-flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.row .card {
+    box-sizing: border-box;
+    width: 80%;
+    border: 3px dashed white;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 15px;
+}
+.row h1 {
+    position: relative;
+    border: solid 2px white;
+    border-radius: 10px;
+    padding: 5px;
+    top: -60px;
+    background-color:#26141F ;
+}
+.row p {
+    margin-top: 0;
+    margin-bottom: 10px
+}
+.content-box {
+    background-image: linear-gradient(#aaaaddbb,#C1C1FF);
+    color: rgb(218, 218, 218);
+    padding: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+
+    
+}
