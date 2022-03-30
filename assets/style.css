@@ -1,6 +1,6 @@
 body {
     background-color:#26141F ;
-    color: #C0C4FA;
+    color: rgb(192, 196, 250);
     height: 100vh
     
 }
@@ -12,39 +12,76 @@ body > h1 {
 
 body > p {
     text-align: center;
-     color:white
+    color:white;
+    margin-bottom: 30px;
+    font-size: 20px;
+     
 }
-.row {
-    display: inline-flex;
+.flex-box {
+    display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-.row .card {
+.flex-box .card {
     box-sizing: border-box;
-    width: 80%;
+    width: 23%;
     border: 3px dashed white;
     border-radius: 20px;
-    margin: 20px;
+    margin: 40px;
     padding: 15px;
 }
-.row h1 {
+.card > p {
+    font-size: 20px;
+}
+.flex-box h1 {
     position: relative;
     border: solid 2px white;
     border-radius: 10px;
-    padding: 5px;
+    padding: 7px;
     top: -60px;
     background-color:#26141F ;
+    margin-bottom: -35px;
 }
-.row p {
+.flex-box p {
     margin-top: 0;
-    margin-bottom: 10px
+    margin-bottom: 15px;
 }
 .content-box {
+    box-sizing: border-box;
     background-image: linear-gradient(#aaaaddbb,#C1C1FF);
     color: rgb(218, 218, 218);
     padding: 10px;
     border-radius: 10px;
-    box-sizing: border-box;
-
-    
+    width: 100%;
 }
+.content-box > pre  {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 17px;
+}
+
+/* how to make boxes glow */
+.card, .card > h1 {
+    transition: all 0.4s ease-in-out
+}
+/* we want to make hover over h1 and make the entire box glow */
+.card:hover, 
+.card:hover h1{
+    box-shadow: inset 0px 0px 8px 
+    rgba(192,196,250,0.75), 0 0 25px
+    rgba(192,196,250,0.75);
+}
+
+/* Reponsive for Desktop */
+
+/* Responsive for Phones */
+
+/* Responsive for Tablets */
+
+/* =======================footer design goes here======================= */
+footer {
+    text-align: center;
+    padding: 30px;
+}  

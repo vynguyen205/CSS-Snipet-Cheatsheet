@@ -12,104 +12,114 @@
 <body>
     <h1> CSS Snippet Cheatsheet</h1>
     <p>Ever have trouble recalling the exact syntax for your favorite CSS code? Give it a permanent home and add it to this page! Select any snippet below and it'll automatically select all of the code for you to copy. </p>
-   <div class="row">
+   <div class="flex-box">
        <div class="card">
-           <h1>Flexbox Row</h1>
-           <p> Use these three propeties to create a Flexbox row layout.</p>
+           <h1>Flexbox flex-box</h1>
+           <p> Use these three propeties to create a Flexbox flex-box layout.</p>
            <div class="content-box">
                <pre>
-   .row { 
-       display: flex;
-       flex-direction: row;
-       flex-wrap: wrap;
-   }
+.row { 
+    display: flex;
+    flex-direction: flex-box;
+    flex-wrap: wrap;
+}
                </pre>
            </div>
        </div>
-   </div>
 <!-- ======card 2====== -->
-   <div class="row">
         <div class="card">
-            <h1>Flexbox Row</h1>
-            <p> Use these three propeties to create a Flexbox row layout.</p>
+            <h1>Flexbox Column</h1>
+            <p> Use this to create a Flexbox column layout.</p>
             <div class="content-box">
                 <pre>
-    .row { 
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
+
+.column { 
+    display: flex;
+    flex-direction: column;
+}
+
                 </pre>
             </div>
         </div>
-    </div>
 <!-- ======card 3====== -->
-    <div class="row">
         <div class="card">
-            <h1>Flexbox Row</h1>
-            <p> Use these three propeties to create a Flexbox row layout.</p>
+            <h1>CSS Grid Layout</h1>
+            <p> Build a 12-column layout using Grid.</p>
             <div class="content-box">
                 <pre>
-    .row { 
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
+.grid { 
+    display: grid;
+    width: 100%;
+    grid-template-columns: 
+repeat(12, 1fr);
+}
                 </pre>
             </div>
         </div>
-    </div>
 <!-- ======card 4====== -->
-    <div class="row">
         <div class="card">
-            <h1>Flexbox Row</h1>
-            <p> Use these three propeties to create a Flexbox row layout.</p>
+            <h1>Linear Gradients</h1>
+            <p> This will create a background linear gradient from top to bottom.</p>
             <div class="content-box">
                 <pre>
-    .row { 
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
+<!-- the emptty spave here is to make the content box to fill the box outside -->
+<!-- Don't know how to do it another way, yet -->
+
+.linear-gradient-background { 
+    background-image: linear-
+gradient (
+    rgba(232, 102, 236, 0.3) 0%,
+    rgba(232, 102,236, 0.6) 100%
+    );
+}
+
+
                 </pre>
             </div>
         </div>
-    </div>
 <!-- ======card 5====== -->
-    <div class="row">
         <div class="card">
-            <h1>Flexbox Row</h1>
-            <p> Use these three propeties to create a Flexbox row layout.</p>
+            <h1>Box Transition Glow</h1>
+            <p> Use transition andbox shadows to glow on hover.</p>
             <div class="content-box">
                 <pre>
-    .row { 
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
+.code-card .card-header { 
+    border-radius: 8px;
+    trasition: all 0.5s ease-in-
+out;
+}
+
+.code-card:hover,
+.code-card:hover .card-header {
+    box-shadowL inset 0px 0px 8px 
+rgba (232, 102, 236, 1), 0 0 15px
+rgba (232, 102, 236, 1);
+}
                 </pre>
             </div>
         </div>
-    </div>
 <!-- ======card 6====== -->
-    <div class="row">
         <div class="card">
-            <h1>Flexbox Row</h1>
-            <p> Use these three propeties to create a Flexbox row layout.</p>
+            <h1>Overlay Card with Title</h1>
+            <p> Use postion properties and negative margins to raise elements higher than their natural starting point.</p>
             <div class="content-box">
                 <pre>
-    .row { 
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
+
+
+
+.card-header { 
+    position: relative;
+    margin-top: -20px;
+}
+
+
                 </pre>
             </div>
         </div>
     </div>
 
     <footer>
-        <h2>Made with (heart) and CSS</h2>
+        <h2>Made with 🍕 and CSS</h2>
     </footer>
 </body>
 </html>
